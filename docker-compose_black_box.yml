@@ -1,0 +1,11 @@
+version: '2.1' 
+services:
+  web:
+    image: flask-app-img:black_box
+    restart: always
+    container_name: flask_black_box
+    working_dir: /app
+    ports:
+     - "5000:5000"
+
+
